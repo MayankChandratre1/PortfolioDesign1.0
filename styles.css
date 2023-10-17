@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap");
+
+header {
+  height: 100vh;
+  background-image: url("./blueplanet.png");
+}
+.worksans {
+  font-family: "Work Sans", sans-serif;
+}
+.mukta {
+  font-family: "Mukta", sans-serif;
+}
+.navbar {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagelinks {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+.pagelinks a {
+  text-decoration: none;
+  color: #419ddb;
+  font-weight: 100;
+}
+.pagelinks a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  font-weight: 100;
+}
+.heading {
+  color: #bbe1fa;
+  text-align: center;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px black;
+}
+.heading > h1 {
+  font-size: 5rem;
+
+  margin-bottom: 1rem;
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+.tagline {
+  letter-spacing: 0.4rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.tagline > span {
+  color: #3282b8;
+  font-size: 1.5rem;
+}
+
+.subheading {
+  font-size: 3rem;
+  color: #3282b8;
+}
+
+.hero {
+  height: 100vh;
+  background-color: #152e3c;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.profile {
+  margin: 2rem;
+}
+.herotext h2 {
+  font-size: 3rem;
+  color: #419ddb;
+}
+.intro {
+  font-weight: 200;
+  font-size: 1.5rem;
+  width: 60%;
+  color: #bbe1fa;
+  margin: 1rem 0;
+}
+.intro span {
+  color: #3282b8;
+}
+.paraend {
+  color: #bbe1fa;
+  font-size: 4rem;
+  height: 3.5rem;
+}
+
+.skills {
+  background-color: #152e3c;
+  color: #bbe1fa;
+  text-align: center;
+  height: 100vh;
+}
+.skill-heading {
+  color: #3282b8;
+  font-size: 3rem;
+}
+.skill-list {
+  width: 100%;
+  list-style-type: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill {
+  display: inline-flex;
+  width: 20%;
+  height: 20rem;
+  margin: 0 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill .level {
+  font-size: 1.3rem;
+}
+
+.projects {
+  background-color: #152e3c;
+  text-align: center;
+}
+.card-container {
+  margin-top: 2rem;
+}
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  min-width: 13rem;
+  margin: 3rem 2rem;
+  background-color: #419ddb;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.project-image {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card > h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: #152e3c;
+  text-shadow: 0px 0px 2px #03283d;
+}
+.description,
+.pro-link {
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  text-align: start;
+  width: 80%;
+}
+.pro-link {
+  display: flex;
+  align-items: center;
+  color: #0b2432a7;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px #03283d88;
+}
+.github {
+  width: 20px;
+  object-fit: cover;
+  margin-right: 3px;
+  opacity: 70%;
+}
+
+.contact {
+  height: 100vh;
+  background-color: #152e3c;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  color: #3282b8;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-image {
+  height: 30px;
+  filter: invert(50%) drop-shadow(0px 0px 1px #3282b860);
+}
+
+.contact-image:hover {
+  animation: glow 3s ease infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: invert(50%) drop-shadow(0px 0px 1px #3282b860);
+  }
+  100% {
+    filter: invert(50%) drop-shadow(0px 0px 1px #cdcdcd);
+  }
+}
+
+@media (max-width: 675px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .profile {
+    height: 100px;
+  }
+  .herotext {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .paraend {
+    height: 1rem;
+    font-size: 1rem;
+  }
+  .skill-list {
+    flex-direction: column;
+  }
+  .pagelinks {
+    font-size: 0.7rem;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .tagline span {
+    font-size: 1.1rem;
+  }
+  .skill {
+    height: 10rem;
+  }
+  .card {
+    margin: 1rem;
+    min-width: 7rem;
+  }
+}
